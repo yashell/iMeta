@@ -1,0 +1,46 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	color:#4b4b4b;
+	font-size:12px;
+	font-family:"宋体";
+	list-style: none;
+}
+
+.rthead{
+	border:1px solid #ffffff;
+	border-collapse:collapse;
+	width:100%;
+	background-color:#c5cacd;
+	position:absolute;
+	z-index:2; 
+	top:0px;
+	}
+.rthead td{
+	border:1px solid #ffffff;
+	height:44px;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold}
+.rSerialize{
+	position:absolute;
+	top:0px;
+	bottom:40px;
+	padding-top:44px;
+	width:100%;
+	overflow-y:auto;
+	overflow-x:hidden;
+}	
+.rtbody{
+	border:1px solid #ffffff;
+	border-collapse:collapse;
+	width:100%;
+	position:absolute;
+	}
+.rtbody td{
+	border:1px solid #ffffff;
+	height:44px;
+	font-size:12px;
+	text-align:center;
+	color:#676767}

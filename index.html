@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+
+<script type="text/javascript" src="js/iMeta.js"></script>
+
+<style>
+* {
+	margin: 0px;
+	padding: 0px;
+	color:#4b4b4b;
+	font-size:12px;
+	font-family:"宋体";
+	list-style: none;
+}
+
+.rthead{
+	border:1px solid #ffffff;
+	border-collapse:collapse;
+	width:100%;
+	background-color:#c5cacd;
+	position:absolute;
+	z-index:2; 
+	top:0px;
+	}
+.rthead td{
+	border:1px solid #ffffff;
+	height:44px;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold}
+.rSerialize{
+	position:absolute;
+	top:0px;
+	bottom:40px;
+	padding-top:44px;
+	width:100%;
+	overflow-y:auto;
+	overflow-x:hidden;
+}	
+.rtbody{
+	border:1px solid #ffffff;
+	border-collapse:collapse;
+	width:100%;
+	position:absolute;
+	}
+.rtbody td{
+	border:1px solid #ffffff;
+	height:44px;
+	font-size:12px;
+	text-align:center;
+	color:#676767}
+
+</style>
+
+
+
+
+</head>
+
+<body>
+	
+
+        <table class="rthead" id="tab_con">
+        <tbody>
+        <tr>
+          <td width="5%"></td>
+          <td width="10%">序号</td>
+          <td width="30%">使用角色</td>
+          <td width="20%">样式名称</td>
+          <td width="20%">应用区域</td>
+          <td width="15%">状态</td>
+         </tr>
+         </tbody>
+         </table>
+         <div class="rSerialize" id="tab_control">
+			<table id="tableA" class="rtbody" >
+ 		  <tr>
+          <td width="5%"><input type="checkbox"></td>
+          <td width="10%">序号</td>
+          <td width="30%">使用角色</td>
+          <td width="20%">样式名称</td>
+          <td width="20%">应用区域</td>
+          <td width="15%"><font class="rgreen"></font>已启用</td>
+         </tr>
+          <tr>
+          <td width="5%"><input type="checkbox"></td>
+          <td width="10%">序号</td>
+          <td width="30%">使用角色</td>
+          <td width="20%">样式名称</td>
+          <td width="20%">应用区域</td>
+          <td width="15%"><font class="rgrey"></font>未启用</td>
+         </tr>
+         <tr>
+          <td width="5%"><input type="checkbox"></td>
+          <td width="10%">序号</td>
+          <td width="30%">使用角色</td>
+          <td width="20%">样式名称</td>
+          <td width="20%">应用区域</td>
+          <td width="15%"><font class="rgrey"></font>未启用</td>
+         </tr>
+         <tr>
+          <td width="5%"><input type="checkbox"></td>
+          <td width="10%">序号</td>
+          <td width="30%">使用角色</td>
+          <td width="20%">样式名称</td>
+          <td width="20%">应用区域</td>
+          <td width="15%"><font class="rgrey"></font>未启用</td>
+         </tr>
+		</table>
+        </div>
+
+  
+        
+  
+<script>
+
+window.onload=function(){
+	Y.GetWidth("tab_con","tab_control")
+	Y.TableLineColor("tableA")
+}
+
+
+
+
+ 
+ window.onresize = function(){
+Y.GetWidth("tab_con","tab_control")
+}
+
+</script>
+</body>
+</html>
